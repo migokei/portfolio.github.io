@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e9fc33907a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  <div class="top">
+    <h1>Migo Kei's Portfolio</h1>
+  </div>
+      
+      <div id="drawer-toggle">
+       <span></span>
+       <span></span>
+       <span></span>
+      </div>
+    
+    
+
+   
+ </header>
+  <div id="sm-menu">
+    <ul>
+      <li><a href="#video">Home</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+   
+ <section class="video">
+   <video id="video" src="Tunnel - 27438.mp4" loop autoplay muted playsinline></video>
+ </section>
+
+ 
+ <section id="works">
+   <h2>Works</h2>
+   <p class="explain">過去の制作物の一部を公開します。</p>
+   <div class="grid">
+     <div class="item">
+      
+      <a href="模写コーディング/index.html">
+        <img src="模写サイト写真.jpg" alt="">
+         <p class="workp">HTML&CSS&JQueryで作ったサイト</p> 
+      </a>
+      
+     </div>
+     <div class="item">
+      
+      <a href="ppp/index.html">
+        <img src="スクリーンショット (13).png" alt="">
+        <p class="workp">HTML&CSS&JQueryで作ったサイト</p>
+      </a>
+      
+     </div>
+     <div class="item">
+      
+      <a href="新しいフォルダー/index.html">
+        <img src="スクリーンショット (19).png" alt="">
+        <p class="workp" >HTML&CSS&JQueryで作ったサイト</p>
+      </a>
+      
+     </div>
+     <div class="item">
+      
+      <a href="模写サイト2/index.html">
+        <img src="2022-03-26 (3).png" alt="">
+        <p class="workp">HTML&CSS&JQueryで作ったサイト</p>
+      </a>
+     </div>
+      
+     
+     <div class="item">
+      
+      <a href="youtube 模写/index.html">
+        <img src="スクリーンショット (22).png" alt="">
+        <p class="workp">HTML&CSS&JQueryで作ったサイト</p>
+      </a>
+      
+     </div>
+     <div class="item">
+      
+      <a href="模写/index.html">
+        <img src="スクリーンショット (18).png" alt="">
+        <p class="workp" >HTML&CSS&JQueryで作ったサイト</p>
+      </a>
+      
+    </div>
+     <div class="item">
+      
+      <a href="模写サイト　ラスト/index.html">
+        <img src="スクリーンショット (23).png" alt="">
+        <p class="workp" >HTML&CSS&JQueryで作ったサイト</p> 
+      </a>
+      
+    </div>
+   </div>
+   
+  
+ </section>
+
+ <section id="about">
+   <h2>About</h2>
+   <div class="text">
+     <dl>
+       <dt>名前</dt>
+       <dd>北澤　慶</dd>
+       <dt>生年月日</dt>
+       <dd>2003.2.27</dd>
+       <dt>職業</dt>
+       <dd>モナシュ大学在学中</dd>
+     </dl>
+    
+    <p>現在, モナシュ大学のマレーシア校に在学中。2021年の2月からHTML/CSS, JQueryなどの言語の学習を未経験から開始。
+     話せる言語は、英語、日本語、中国語（現在学習中）、マレー語・インドネシア語（現在学習中）。
+    </p>
+   </div>
+   
+ </section>
+
+ <section id="contact">
+  <h2>Contact</h2>
+  
+  <div class="contact">
+    <div class="contact-item">
+      
+      <a href="https://www.instagram.com/migo_kei/"><i class="fa-brands fa-instagram"></i></a> 
+      <p class="ig">インスタグラムのDMから</p>
+    </div>
+    
+    <div class="contact-item">
+      <a href="mailto:outguy@outlook.jp"><i class="fa-solid fa-envelope"></i></a>
+      <p class="mail">メールから</p>
+    </div>
+    
+    
+     
+    
+  </div>
+
+    
+   
+    
+  </ul>
+
+ </section>
+
+<footer>
+  <a id="to-top" href="#"></a>
+  <ul>
+    <li><a href="#video">Home</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  
+   </ul>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(function() {
+    $("#drawer-toggle").click(function() {
+      $(this).toggleClass("open");
+      $("#sm-menu").slideToggle(1000);
+      
+    });
+  });
+</script>
+</body>
+</html>
