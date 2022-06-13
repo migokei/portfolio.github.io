@@ -1,0 +1,124 @@
+@media (max-width: 780px) {
+  body {
+    max-width: 100%;
+  }
+  header h1 {
+    z-index: 200;
+    
+  }
+  #drawer-toggle {
+    width: 60px;
+    display: inline-block;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    height: 60px;
+    
+    z-index: 200;
+  }
+  #drawer-toggle span {
+    position: absolute;
+    top: 23px;
+    left: 13px;
+    display: inline-block;
+    width: 50%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666;
+    vertical-align: top;
+  }
+  #drawer-toggle span:nth-child(2) {
+    margin-top: 10px;
+  }
+  #drawer-toggle span:last-child {
+    margin-top: 20px;
+  }
+  #drawer-toggle.open span {
+    top: 35px;
+    left: 14px;
+    width: 35px;
+    margin: 0;
+  }
+  #drawer-toggle.open span:first-child {
+    transform: rotate(45deg);
+  }
+  #drawer-toggle.open span:nth-child(2) {
+    display: none;
+  }
+  #drawer-toggle.open span:last-child {
+    transform: rotate(-45deg);
+  }
+  #sm-menu  {
+    position: fixed;
+    padding-top: 60px;
+    top: 0;
+    left: 0;
+    
+    
+    width: 100%;
+    z-index: 50;
+    
+  }
+  #sm-menu ul {
+    height: auto;
+    background-color: black;
+  }
+  #sm-menu li {
+    padding-left: 30px;
+    border-bottom:1px solid white ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+  #sm-menu li a {
+    color: white;
+    
+  }
+  #sm-menu li a:hover {
+    border-bottom: 2px solid white;
+  }
+  #sm-menu.close {
+    display: none;
+  }
+  header #menu {
+    display: none;
+  }
+ 
+  .grid {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  #about .text {
+    max-width: 100%;
+    margin-left: 20px;
+    
+    
+  }
+  
+  #about .text dd {
+    margin-left: 20px;
+  }
+  #about .text dl {
+    margin: 0 auto;
+    width: 400px;
+  }
+  #about .text p {
+    width: 400px;
+    margin: 0 auto;
+  }
+  #contact .contact {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  #contact .contact-item {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+  
+}
