@@ -1,0 +1,47 @@
+@media (max-width:766px) {
+ 
+ #feature h2 {
+   font-size: 25px;
+   padding-bottom: 37px;
+ }
+ #feature .grid {
+   display: grid;
+   grid-template-columns: none;
+   padding-left: 14px;
+   padding-right: 14px;
+ }
+ #feature .item img  {
+   max-width: 100%;
+ }
+ 
+ #contact .contents {
+   width: 440px;
+   margin: 0 auto;
+   flex-direction: column;
+   padding-left: 5%;
+   padding-right: 5%;
+ }
+ #contact h2 {
+   font-size: 25px;
+ }
+ #contact .text-content {
+   width: 440px;
+   
+ }
+ #contact .contact-form input {
+   margin-top: 5px;
+   width: 420px;
+ }
+ #contact .contact-form textarea {
+   width: 440px;
+   margin-top: 5px;
+ }
+ #contact .contact-form {
+   width: 440px;
+  
+ }
+ #contact .contact-form .button input {
+   width: 440px;
+ }
+ 
+}

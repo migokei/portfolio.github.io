@@ -1,0 +1,339 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+p {
+  line-height: 1.5;
+}
+
+#header {
+  background-color: white;
+  height: 80px;
+}
+.header-title {
+  padding: 20px 40px;
+}
+#drawer-toggle {
+  z-index: 200;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  
+}
+#drawer-toggle span {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  vertical-align: top;
+}
+#drawer-toggle span:nth-child(2) {
+  margin-top: 10px;
+}
+#drawer-toggle span:last-child {
+  margin-top: 20px;
+}
+#drawer-toggle.open span {
+  top: 35px;
+  left: 5px;
+  width: 35px;
+  margin: 0;
+}
+#drawer-toggle.open span:first-child {
+  transform: rotate(45deg);
+}
+#drawer-toggle.open span:nth-child(2) {
+  display: none;
+}
+#drawer-toggle.open span:last-child {
+  transform: rotate(-45deg);
+}
+
+
+#navi {
+  display: block;
+  background-color: black;
+  position: fixed;
+  left: -100%;
+  transition: left .3s;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  padding: 60px 25px;
+  z-index: 10;
+}
+
+#navi.sp-open {
+  
+  left: 0;
+}
+
+#navi ul.nav-menu {
+  border-top: 1px solid white;
+  
+}
+#navi ul.nav-menu li {
+  position: relative;
+  padding: 28px 0 28px 0;
+  border-bottom: 1px solid white;
+}
+
+#navi a {
+  color: white;
+  text-decoration: none;
+ 
+}
+#navi .nav-sns {
+  padding-top: 65px;
+}
+#navi .nav-sns li {
+  padding-bottom: 23px;
+}
+#mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 5;
+}
+#mask.open {
+  display: block;
+}
+#bg-video  {
+  width: 100%;
+}
+#pickup {
+  padding-top: 124px;
+  
+  
+}
+#pickup h2 {
+  font-size: 38px;
+  text-align: center;
+  padding-bottom: 61px;
+}
+#pickup .photo-pick {
+ display: flex;
+ overflow-x: scroll;
+}
+
+.itemlist li img {
+  max-width: 100%;
+}
+#feature {
+  padding-top: 124px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#feature h2 {
+  font-size: 38px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#feature .grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+  padding-bottom: 60px;
+}
+#feature .item {
+  box-shadow: 0 0 8px 4px #ccc;
+}
+#feature .item img {
+  width: 100%;
+}
+#feature .item-content {
+  padding: 30px;
+}
+#feature .item-logo {
+  padding-bottom: 30px;
+  font-size: 12px;
+}
+#feature .item-text {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#feature .item-date {
+  float: right;
+  font-size: 12px;
+  
+}
+#contact {
+  background-color: black;
+  color: white;
+  padding-bottom: 48px;
+}
+#contact .contents {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#contact .text-content {
+  width: 49%;
+}
+#contact .text-content p {
+  padding-bottom: 43px;
+}
+#contact .contact-form {
+  width: 45%;
+  
+}
+#contact h2 {
+  font-size: 33px;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+#contact .contact-form label {
+  font-size: 15px;
+  
+}
+#contact .contact-form input {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 30px;
+  
+}
+#contact .contact-form textarea
+ {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 28px;
+}
+
+#contact .contact-form .button input {
+  width: 200px;
+  border: 1px solid white;
+  background-color: black; 
+  color: white;
+  padding: 15px 0;
+}
+#contact .contact-form .button input:hover {
+  background-color: white;
+  color: black;
+}
+
+
+#footer {
+  background-color: black;
+}
+#footer p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
