@@ -1,0 +1,246 @@
+@media (max-width: 960px) {
+  
+  #line {
+    display: block;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+  }
+
+  #line img {
+    width: 180px;
+    left: 18px;
+    top: 10px;
+    position: relative;
+  }
+ 
+  #header {
+    display: none;
+    
+  }
+  #header .open {
+    display: block;
+  }
+ 
+  .container {
+    margin-left: 0px;
+  }
+  #mask {
+    display: none;
+    transition: 0.5s;
+  }
+  #mask.open{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    cursor: pointer;
+    display: block;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+  }
+  #drawer_toggle {
+    z-index: 200;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    
+    
+  }
+  #drawer_toggle span {
+    position: absolute;
+    top: 23px;
+    left: 15px;
+    display: inline-block;
+    width: 40%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: black;
+    vertical-align: top;
+
+  }
+  #drawer_toggle span:nth-child(2) {
+   margin-top: 7px;
+  }
+  #drawer_toggle span:last-child {
+    margin-top: 14px;
+  }
+  #drawer_toggle.open span {
+    top: 40px;
+    left: 14px;
+    width: 40px;
+    margin: 0;
+    background-color: white;
+    
+  }
+  #drawer_toggle.open span:first-child {
+    top: 25px;
+    left: 18px;
+    transform: translateY(6px) rotate(-135deg);
+    width: 40%;
+  }
+  #drawer_toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  #drawer_toggle.open span:last-child {
+    top: 37px;
+    left: 18px;
+    transform: translateY(-6px) rotate(135deg);
+    width: 40%;
+  }
+  #sm-menu {
+    width: 300px;
+    background: #fff;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    opacity: 0;
+    overflow-y: auto;
+    transition: left 0.5s;
+    z-index: 150;
+    display: inline-block;
+  }
+  #sm-menu .menu {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  #sm-menu .menu li {
+    padding-bottom: 15px;
+  }
+  #sm-menu .menu-sns {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+  #sm-menu .menu-sns li {
+      padding-top: 15px;
+  }
+  #sm-menu.open {
+    left: 0;
+    opacity: 1;
+    z-index: 1000;
+  }
+  
+
+  
+  
+  .section-title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .section-title::before {
+    width: 14%;
+  }
+  .section-title::after {
+    width: 14%;
+  }
+  #video {
+    height: 80vh;
+  }
+
+  
+  #main-contents {
+   padding-left: 0;
+   max-width: 100%;
+  }
+  
+  
+  .wrapper {
+    width: 100%;
+  }
+  
+  #project .list {
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #project .pro {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 34px;
+ 
+  }
+  
+  #trait {
+    max-width: 100%;
+    margin: 0 auto;
+  } 
+  #trait .lis {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+
+  #flow p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  #flow .step {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #flow .figure {
+    margin-bottom: 80px;
+  }
+  #flow .figure::before {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  #flow .figure li {
+    width: calc(100vw - 80px);
+  }
+  #flow .figure li::before {
+    border-left: calc(50vw - 40px) solid transparent;
+    border-right: calc(50vw - 40px) solid transparent;
+  }
+  #flow .description {
+    margin-left: 50px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  #flow .description dd {
+    margin-bottom: 20px;
+  }
+  #contact {
+    padding-left: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #contact p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #contact .contact-bt {
+   flex-direction: column-reverse;
+   padding-left: 20%;
+   padding-right: 20%;
+  }
+  #contact .contact-bt .im-contact {
+    margin-bottom: 23px;
+    padding: 58px 30% 58px 40%;
+    
+  }
+  #contact .contact-bt .im-contact img {
+    max-width: 100%;
+    
+  }
+
+  #footer {
+    padding-left: 0px;
+  }
+  #footer ul li {
+    margin-bottom: 15px;
+  }
+}

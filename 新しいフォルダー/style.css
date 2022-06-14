@@ -1,0 +1,368 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+body {
+  font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  width: 100%;
+  position: relative;
+  height: 565px;
+}
+header img {
+  position: absolute;
+  left: 50%;
+  width: 1280px;
+  margin-left: -640px;
+  height: 567px;
+}
+#heading {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  color: white;
+  width: 100%;
+  line-height: 1.2;
+}
+header h1  {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  font-weight: normal;
+}
+header h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+#drawer_toggle {
+  z-index: 200;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  
+}
+#drawer_toggle span {
+  position: absolute;
+  top: 19px;
+  left: 17px;
+  display: inline-block;
+  width: 30%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+  vertical-align: top;
+}
+#drawer_toggle span:nth-child(2) {
+ margin-top: 7px;
+}
+#drawer_toggle span:last-child {
+  margin-top: 14px;
+}
+#drawer_toggle.open span {
+  top: 29px;
+  left: 14px;
+  width: 20px;
+  margin: 0;
+}
+#drawer_toggle.open span:first-child {
+  transform: rotate(45deg);
+}
+#drawer_toggle.open span:nth-child(2) {
+  display: none;
+}
+#drawer_toggle.open span:last-child {
+  transform: rotate(-45deg);
+}
+#menu-items {
+  position: absolute;
+  padding-top: 63px;
+  width: 100%;
+  display: none;
+  
+  
+}
+#menu-items .fas {
+  padding-right: 8px;
+}
+#menu-items ul {
+ background-color: white;
+ 
+ 
+}
+#menu-items ul li {
+
+ text-align: left;
+}
+#menu-items ul li a {
+  display: block;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-align: left;
+
+}
+#menus {
+ position: absolute;
+ right: 40px;
+ top: 48px;
+ 
+}
+
+#menus li {
+  display: none; 
+  padding-left: 25px;
+}
+#menus a {
+  color: black;
+ 
+}
+.vision {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.heading{
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 37px;
+  font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+  font-size: 22px;
+}
+.message-container img{
+  width: 100%;
+}
+.message-items p {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 57px;
+}
+.message-container2 img {
+  width: 100%;
+}
+.message-items2 {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+#contents-wrapper {
+  
+  
+  padding-bottom: 55px;
+}
+.contents-item {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  padding-bottom: 26px;
+}
+
+#explain-wrapper {
+  width: 100%;
+  background: url(https://f-tpl.com/sample/tpl_090/images/bgSec04.jpg) no-repeat 100% 100% fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  padding-bottom: 75px;
+
+}
+
+.explain h2 {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 37px;
+  font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+  font-size: 22px;
+  color: white;
+}
+.explain p {
+  color: white;
+  width: 92%;
+  margin: 0 auto;
+}
+.explain2 h2 {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 37px;
+  font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+  font-size: 22px;
+  color: white;
+}
+.explain2 p {
+  color: white;
+  width: 92%;
+  margin: 0 auto;
+}
+ul {
+    list-style: none;
+    
+}
+#address-wrapper {
+  padding-top: 77px;
+  
+  
+}
+.col2 li {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  ;
+}
+#address-wrapper dt {
+  clear: left;
+  float: left;
+  display: block;
+  width: 30%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  text-align: right;
+  line-height: 1.6em;
+}
+#address-wrapper dd {
+  width: 60%;
+    float: left;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+}
+.ggmap {
+  width: 92%;
+  padding-bottom: 60%;
+  background-color: pink;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  padding-top: 125px;
+  padding-bottom: 28px;
+}
+footer p {
+ font-size: 12px;
+ text-align: center;
+}
+footer a {
+  color: blue;
+}
